@@ -11,6 +11,7 @@
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
+  overflow: hidden;
 }
 
 /* Navbar */
