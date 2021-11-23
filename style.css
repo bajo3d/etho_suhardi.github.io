@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #088a60;
+  --secondary-color: #010409;
 }
 
 * {
@@ -71,7 +72,7 @@
 }
 
 .navbar.sticky .menu li a:hover {
-  color: rgb(44, 44, 44);
+  color: var(--secondary-color);
 }
 
 /* Menu Mobile Btn */
@@ -143,7 +144,7 @@
     width: 100%;
     left: -100%;
     top: 0;
-    background-color: #111;
+    background-color: var(--secondary-color);
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
