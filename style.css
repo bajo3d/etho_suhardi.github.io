@@ -3,6 +3,7 @@
 :root {
   --primary-color: #088a60;
   --secondary-color: #010409;
+  --third-color: #fff;
 }
 
 * {
@@ -40,7 +41,7 @@
 }
 
 .navbar .logo a {
-  color: white;
+  color: var(--third-color);
   font-size: 35px;
   font-weight: 600;
 }
@@ -51,7 +52,7 @@
 }
 
 .navbar.sticky .logo a span {
-  color: white;
+  color: var(--third-color);
 }
 
 .navbar .menu li {
@@ -60,7 +61,7 @@
 }
 
 .navbar .menu li a {
-  color: white;
+  color: var(--third-color);
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -77,7 +78,7 @@
 
 /* Menu Mobile Btn */
 .menu-btn {
-  color: white;
+  color: var(--third-color);
   font-family: Fontawesome;
   font-size: 23px;
   cursor: pointer;
@@ -90,7 +91,7 @@
   background: url(img/banner.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
-  color: white;
+  color: var(--third-color);
   min-height: 500px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -120,15 +121,19 @@
 }
 
 /* responsive media query start */
-@media (max-width: 947px) {
-  .max-width {
-    padding: 0 30px;
-  }
-
+@media (max-width: 1104px) {
   .home .max-width {
-    margin: auto 0 auto 20px;
+    margin-left: 0px;
   }
+}
 
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
   .menu-btn {
     display: block;
     z-index: 9999;
@@ -162,5 +167,37 @@
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 27px;
   }
 }
